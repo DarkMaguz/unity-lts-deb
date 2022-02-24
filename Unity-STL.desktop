@@ -3,6 +3,6 @@
 Version=VERSION
 Type=Application
 Terminal=false
-Icon=/opt/Unity/Editor/Data/Resources/LargeUnityIcon.png
+Icon=/opt/Unity-LTS/Editor/Data/Resources/LargeUnityIcon.png
 Name=Unity
 Exec=/opt/Unity-LTS/Editor/Unity
