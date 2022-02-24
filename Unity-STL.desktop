@@ -1,0 +1,8 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=VERSION
+Type=Application
+Terminal=false
+Icon=/opt/Unity/Editor/Data/Resources/LargeUnityIcon.png
+Name=Unity
+Exec=/opt/Unity-LTS/Editor/Unity

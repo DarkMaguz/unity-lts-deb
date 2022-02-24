@@ -1,0 +1,4 @@
+unity-lts/
+*.deb
+releases-linux.json
+*.tar*
