@@ -32,7 +32,7 @@ LATEST_VERSION=$(jshon -F releases-linux.json -e official -e -1 -e version | tr 
 if [ -z $LATEST_VERSION ]; then
   echo "Failed to get the latest version of Unity!"
   echo "Terminating..."
-  cleanup()
+  cleanup
   exit 1
 fi
 echo "Latest version: $LATEST_VERSION"
@@ -56,7 +56,7 @@ if [ $UPDATE ]; then
   ARCHIVE_URL=$(jshon -F releases-linux.json -e official -e -1 -e downloadUrl | tr -d "\"" | tr -d "\\")
   if [ -z $ARCHIVE_URL ]; then
     echo "Failed to get the URL for the Unity archive!"
-    cleanup()
+    cleanup
     exit 1
   fi
 
@@ -103,4 +103,4 @@ else
 fi
 
 # Clean up.
-cleanup()
+cleanup
